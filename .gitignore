@@ -1,0 +1,21 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+.env
+
+# data
+scripts/
+
+# Testing
+*.rest
+test/
+
+#build
+# dist/
+
+# local storage
+local/
+
+# dev
+nodemon.json

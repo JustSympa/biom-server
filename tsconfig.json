@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es2020",
+    "lib": ["ES2020"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": false,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "paths": {
+      "@config/*": ["./src/config/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      // "@middlewares/*": ["./src/middlewares/*"],
+      // "@models/*": ["./src/models/*"],
+      "@routes/*": ["./src/routes/*"],
+      // "@schema/*": ["./src/schemas/*"],
+      "@services/*": ["./src/services/*"],
+      // "@utils/*": ["./src/utils/*"],
+      // "@templates": ["./src/config/mails.ts"],
+      "@config": ["./src/config/index.ts"],
+      "@drizzle": ["./src/plugins/drizzle.ts"],
+      "@jwt": ["./src/plugins/jwt.ts"],
+      // "@entity": ["./src/types/entity.ts"],
+      // "@errors": ["./src/types/errors.ts"],
+      "@models": ["./src/models/index.ts"],
+      "@authroutes": ["./src/routes/auth.routes.ts"],
+      "@reportroutes": ["./src/routes/report.routes.ts"],
+      "@reportservice": ["./src/services/report.service.ts"],
+      "@errorsmiddleware": ["./src/middlewares/error.ts"],
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
