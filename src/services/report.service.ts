@@ -76,7 +76,7 @@ Analyze the plant in the images, taking into consideration GPS info and problem 
 
 If the image does not contain a plant, ajust the response fields.
 Keep the language simple enough for a non-expert farmer to understand.
-The report and metadata will be in the language specified by the user or in english if no language is specified
+The report and metadata will be in the language specified by the user or in english if no language is specified.
 
 The output will be in JSON in the following format:
 {
@@ -94,7 +94,7 @@ The output will be in JSON in the following format:
 		preventionTips: string[] list of prevention tips,
 		disclaimer: a short reminder that this is an AI diagnosis and a specialist should be consulted for critical decisions,
 	},
-	report: The actual full report to be displayed, the text content must be in Markdown Format
+	report: The actual full report to be displayed, the text content must be in Markdown Format. Since the user are farmers and plant enthusiasts, the report should not follow a formal tone.
 }
 `
 

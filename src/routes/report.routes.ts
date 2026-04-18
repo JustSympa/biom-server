@@ -102,7 +102,7 @@ export async function reportRoutes(fastify: FastifyInstance) {
 
 			return reply.status(201).send({
 				...plantReport.metadata,
-				id: plantReport.metadata.responseId,
+				id: saved.id,
 				createdAt: saved.createdAt,
 				report: plantReport.report,
 			});
